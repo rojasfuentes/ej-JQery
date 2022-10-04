@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JS Query Ui</title>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.structure.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.theme.css">
+
+    <script type="text/javascript" src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript" src="js/06-interface.js"></script>
+
+    <style>
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+
+        .lista-seleccionable li {
+            width: 80px;
+            padding: 20px;
+            border: 1px solid green;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul .ui-selecting {
+            background: hotpink;
+        }
+
+        ul .ui-selected {
+            background: blue;
+        }
+
+        #elemento-movido {
+            width: 100px;
+            height: 100px;
+            border: 4px solid indianred;
+        }
+
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 4px solid gold;
+        }
+
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 4px solid gold;
+        }
+
+        .elemento {
+            background: pink;
+            float: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Aprendiendo JQery UI</h1>
+    <hr>
+    <h3>Tooltip</h3>
+    <a href="#" title="Acceder a mis datos" id="Misdatos">Mis datos</a>
+    <a href="#" title="Loggin en la web" >Idenificarse</a>
+    <a href="#" title="Ver amigos" id="Misdatos">Amigos</a>
+
+    <hr>
+    <h3>Cuadros de dialogo</h3>
+    <button id="lanzar-popup">Lanzame</button>
+    <br>
+    <div id="popup" title="Are you shure?" style="display: none;">
+Acepta y dame tu alma
+    </div>
+    <hr>
+
+    <h3>Calendario</h3>
+    <input type="text" id="calendario">
+
+    <hr>
+
+    <h3>Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1"></a>Pestaña 1</li>
+            <li><a href="#tabs-2"></a>Pestaña 2</li>
+            <li><a href="#tabs-3"></a>Pestaña 3</li>
+        <div id="tabs-1">
+            Primera pestaña
+        </div>
+        <div id="tabs-2">
+            Segunda pestaña
+        </div>
+        <div id="tabs-3">
+            Tercera pestaña
+        </div>
+        </ul>
+    </div>
+
+    <hr>
+
+    <button id="mostrar">Mostrar</button>
+
+    <div class="caja-efectos elemento"></div>
+
+    <div id="elemento-movido"></div>
+    <br>
+    <div id="area"></div>
+
+    <ul class="lista-seleccionable">
+        <li>GTA V</li>
+        <li>Skyrym</li>
+        <li>Zelda/li>
+        <li>Aristopvtas</li>
+    </ul>
+
+    <div class="elemento">
+        Soy un elemento
+    </div>
+
+    <div class="elemento">
+        Soy un elemento
+    </div>
+
+    <div class="elemento">
+        Soy un elemento
+    </div>
+
+</body>
+
+</html>
